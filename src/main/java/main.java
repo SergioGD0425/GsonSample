@@ -10,11 +10,11 @@ public class main {
 		Scanner entrada = new Scanner(System.in);
 		
 		System.out.println("Introduce un nombre:");
-		p.nombre = entrada.nextLine();
+		p.setNombre(entrada.nextLine());
 		System.out.println("Introduce apellidos:");
-		p.apellidos = entrada.nextLine();
+		p.setApellidos(entrada.nextLine());
 		System.out.println("Introduce edad:");
-		p.edad = entrada.nextInt();
+		p.setEdad(entrada.nextInt());
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String json = gson.toJson(p);
